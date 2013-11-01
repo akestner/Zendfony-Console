@@ -1,42 +1,43 @@
-# Zend Framework 1.X + Doctrine 2.X integration
+## Zendfony-Console ##
+Integrates Symfony Console Component with a Zend Framework (v1) application.
 
-ZF1-D2 is an integration tool to allow you use Doctrine 2 at the top of Zend Framework 1.
+(The following instructions are from repo this was forked from, will be updated eventually...)
 
-## Installation
+## ~~Installation~~
 
-Install ZF1-D2 using [Composer](http://getcomposer.org)
+~~Install ZF1-D2 using [Composer](http://getcomposer.org)~~
 
-### Create your composer.json file
+### ~~Create your composer.json file~~
 
-      {
-          "require": {
-              "guilhermeblanco/zendframework1-doctrine2": "master-dev"
-          },
-          "minimum-stability": "dev"
-      }
+      ~~{~~
+         ~~"require": {~~
+              ~~"guilhermeblanco/zendframework1-doctrine2": "master-dev"~~
+          ~~},~~
+          ~~"minimum-stability": "dev"~~
+      ~~}~~
 
-### Download composer into your application root
+### ~~Download composer into your application root~~
 
-      $ curl -s http://getcomposer.org/installer | php
+      $ ~~curl -s http://getcomposer.org/installer | php~~
 
-### Install your dependencies
+### ~~Install your dependencies~~
 
-      $ php composer.phar install
+      $ ~~php composer.phar install~~
 
-## Configuring
+## ~~Configuring~~
 
-Doctrine 2 requires different parts of configuration.
+~~Doctrine 2 requires different parts of configuration.~~
 
-- Cache
-- DBAL
-- ORM
+- ~~Cache~~
+- ~~DBAL~~
+- ~~ORM~~
 
-### Configuring Namespaces
+### ~~Configuring Namespaces~~
 
-Since parts of Doctrine rely on specific commit pointers of individual Doctrine packages, a class loader is required to allow a customized configuration of Namespaces.
+~~Since parts of Doctrine rely on specific commit pointers of individual Doctrine packages, a class loader is required to allow a customized configuration of Namespaces.
 One good example is default Doctrine GIT clone, which points to Doctrine\Common and Doctrine\DBAL packages through git submodules.
 To address this different paths issue, Bisna provides an specific class laoder configuration, which allows you to correclty map your environment.
-Here is an example of configuration:
+Here is an example of configuration:~~
 
     ; Doctrine Common ClassLoader class and file
     resources.doctrine.classLoader.loaderClass = "Doctrine\Common\ClassLoader"
